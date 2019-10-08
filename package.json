@@ -1,0 +1,23 @@
+{
+  "name": "serverless-graphql-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Preparing to catch them all\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickyMeuleman/serverless-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickyMeuleman/serverless-graphql/issues"
+  },
+  "homepage": "https://github.com/NickyMeuleman/serverless-graphql#readme",
+  "dependencies": {
+    "apollo-server-lambda": "^2.9.5"
+  }
+}
