@@ -1,9 +1,9 @@
 const { ApolloServer } = require("apollo-server-lambda");
 const { importSchema } = require("graphql-import");
-const { resolvers } = require("../resolvers/faunaResolvers.js");
-const { client, query } = require("../faunaDb.js");
+const { resolvers } = require("./utils/faunaResolvers.js");
+const { client, query } = require("./utils/faunaDb.js");
 
-const typeDefs = importSchema("schema.graphql");
+const typeDefs = importSchema("./functions/utils/schema.graphql");
 
 const server = new ApolloServer({
   typeDefs,

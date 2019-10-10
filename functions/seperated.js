@@ -1,9 +1,9 @@
 const { ApolloServer } = require("apollo-server-lambda");
 const { importSchema } = require("graphql-import");
-const { resolvers } = require("../resolvers/seperatedResolvers.js");
-const { pokemons } = require("../db.js");
+const { resolvers } = require("./utils/seperatedResolvers.js");
+const { pokemons } = require("./utils/db.js");
 
-const typeDefs = importSchema("schema.graphql");
+const typeDefs = importSchema("./functions/utils/schema.graphql");
 
 const server = new ApolloServer({
   typeDefs,
