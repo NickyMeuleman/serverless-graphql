@@ -3,7 +3,7 @@ const { importSchema } = require("graphql-import");
 const { resolvers } = require("./utils/faunaResolvers.js");
 const { client, query } = require("./utils/faunaDb.js");
 
-const typeDefs = importSchema("./functions/utils/schema.graphql");
+const typeDefs = importSchema("./utils/schema.graphql");
 
 const server = new ApolloServer({
   typeDefs,
