@@ -1,3 +1,6 @@
+const { gql } = require("apollo-server-lambda")
+
+exports.typeDefs = gql`
 type Query {
   hello: String!
   allPokemon: [Pokemon]!
@@ -16,3 +19,4 @@ type Pokemon {
   name: String!
   isVeryBest: Boolean!
 }
+`
