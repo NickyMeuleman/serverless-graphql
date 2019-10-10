@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Serverless pokemon api</title>
+    <style>
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Ubuntu, Arial, sans-serif;
+          font-size: 1.2rem;
+      }
+      li {
+        margin: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <a href="/.netlify/functions/base">base GraphQL endpoint</a>
+    <ul>
+      <li>
+        <a href="/.netlify/functions/base">GraphQL endpoint using a single file</a></li>
+      <li>
+        <a href="/.netlify/functions/seperated">GraphQL endpoint with code using multiple files</a>
+      </li>
+      <li>
+        <a href="/.netlify/functions/fauna">GraphQL endpoint using FaunaDB</a></li>
+      </li>
+    </ul>
   </body>
 </html>

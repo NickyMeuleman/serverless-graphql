@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/NickyMeuleman/serverless-graphql#readme",
   "dependencies": {
-    "apollo-server-lambda": "^2.9.5"
+    "apollo-server-lambda": "^2.9.5",
+    "dotenv": "^8.1.0",
+    "faunadb": "^2.8.1",
+    "graphql-import": "^0.7.1",
+    "node-fetch": "^2.6.0"
   }
 }
