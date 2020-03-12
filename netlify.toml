@@ -1,6 +1,19 @@
-# example netlify.toml
 [build]
   command = "npm run build"
   # functions = "functions"
   publish = "public"
 
+[[redirects]]
+  from = "/.netlify/functions/base"
+  to = "/#functions-offline"
+  status = 301
+
+[[redirects]]
+  from = "/.netlify/functions/seperated"
+  to = "/#functions-offline"
+  status = 301
+
+[[redirects]]
+  from = "/.netlify/functions/fauna"
+  to = "/#functions-offline"
+  status = 301
